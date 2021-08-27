@@ -2,7 +2,8 @@ const form = document.querySelector("#saludador-form");
 const nombre = document.querySelector("#nombre-input");
 const edad = document.querySelector("#edad-input");
 const genero = document.querySelector("#genero-input");
-const idioma = document.querySelector("#idioma-input");
+var idioma = document.querySelector("#idioma-input");
+
 
 // COLUMNAS: 0-> mujer ; 1 -> Hombre -> ; 2 -> otro
 // FILA: 0-> edad<15 ; 1 -> edad<30 -> ; 2 -> edad>29
@@ -53,6 +54,8 @@ form.addEventListener("submit",(event)=>{
     
     alert(saludo_completo);
 } );
+
+
 
 var ENGLISH = {
     "niña ": "girl ",
